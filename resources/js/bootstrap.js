@@ -28,6 +28,5 @@ window.Echo = new Echo({
     wsPort: import.meta.env.VITE_PUSHER_PORT ?? 80, // Web Socket Port
     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 443, // Web Socket Security Port
     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
-    enabledTransports: ['ws'],
-    // enabledTransports: ['ws', 'wss'],
+    enabledTransports: ['ws', 'wss'],
 });
